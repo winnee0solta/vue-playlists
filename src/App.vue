@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <product-list-one v-bind:products="products"></product-list-one>
-    <product-list-two v-bind:products="products"></product-list-two>
+    <product-list-one ></product-list-one>
+    <product-list-two ></product-list-two>
   </div>
 </template>
 
@@ -15,17 +15,18 @@ components:{
 'product-list-one':ProductListOne,
 'product-list-two':ProductListTwo,
 },
-data (){
-  return {
-    products :[
-      {name:'Banana 1 ',price:320},
-      {name:'Banana 2',price:520},
-      {name:'Banana 3',price:420},
-      {name:'Banana 4',price:220},
-      {name:'Banana 5',price:120},
-    ]
-  }
-},
+// data (){
+//   return {
+//     products :[
+//       {name:'Banana 1 ',price:320},
+//       {name:'Banana 2',price:520},
+//       {name:'Banana 3',price:420},
+//       {name:'Banana 4',price:220},
+//       {name:'Banana 5',price:120},
+//     ]
+//   }
+// },
+
 }
 </script>
 <style lang="scss">

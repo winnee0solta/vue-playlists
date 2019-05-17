@@ -12,15 +12,12 @@
 
 <script>
 export default {
-  name: 'ProductListTwo',
-  props:[
-    'products'
-  ],
- data(){
-   return {
-
-   }
- },
+  name: 'ProductListTwo', 
+ computed :{
+   products(){
+    return this.$store.state.products
+  }
+ }
 
 }
 </script>
